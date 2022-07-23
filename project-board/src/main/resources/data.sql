@@ -99,8 +99,6 @@ insert into article (title, content, hashtag, created_by, modified_by, created_a
 insert into article (title, content, hashtag, created_by, modified_by, created_at, modified_at) values ('Suspendisse potenti.', 'Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.', 'Puce', 'Glenda', 'Wallie', '2021-11-21 15:02:07', '2022-04-21 16:35:39');
 insert into article (title, content, hashtag, created_by, modified_by, created_at, modified_at) values ('Nullam varius.', 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', 'Puce', 'Vincenty', 'Morry', '2021-10-16 05:18:20', '2022-05-29 19:09:37');
 
-
-# article_Comment
 insert into article_Comment (content, created_By, modified_By, created_At, modified_At, article_id) values ('Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', 'Horten', 'Tris', '2021-12-15 10:09:37', '2022-02-01 06:58:04', 82);
 insert into article_Comment (content, created_By, modified_By, created_At, modified_At, article_id) values ('Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', 'Francisco', 'Jephthah', '2021-09-09 21:37:40', '2022-05-01 10:46:48', 5);
 insert into article_Comment (content, created_By, modified_By, created_At, modified_At, article_id) values ('In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', 'Finn', 'Dew', '2021-12-13 02:21:21', '2021-09-19 14:08:45', 61);
