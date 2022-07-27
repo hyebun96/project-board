@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -7,10 +8,7 @@
 
 <body>
 
-    <header>
-        header 삽입부
-        <hr>
-    </header>
+    <header th:replace="~{header :: header}"></header>
 
     <main>
         <form>
@@ -70,9 +68,7 @@
         </nav>
     </main>
 
-    <footer>
-        <hr>
-        footer 삽입부
-    </footer>
+    <footer th:replace="~{footer :: footer}"></footer>
+
 </body>
 </html>
