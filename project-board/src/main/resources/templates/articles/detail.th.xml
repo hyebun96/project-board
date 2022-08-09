@@ -18,4 +18,16 @@
         <attr sel="div/small/time"  th:datetime="${articleComments.createAt}" th:text="${#temporals.format(articleComments.createAt, 'yyyy-MM-dd')}" />
         <attr sel="div/p" th:text="${articleComments.content}" />
     </attr>
+
+    <attr sel="#pagination">
+    <attr sel="ul">
+        <attr sel="li[0]/a"
+              th:href="*{id} - 1 <= 0 ? '#' : |/articles/*{id - 1}|"
+              th:class="'page-link' + (*{id} - 1 <= 0 ? ' disabled' : '')"
+        />
+        <attr sel="li[1]/a"
+              th:href="*{id} + 1 > ${totalCount} ? '#' : |/articles/*{id + 1}|"
+              th:class="'page-link' + (*{id} + 1 > ${totalCount} ? ' disabled' : '')"
+        />
+    </attr>
 </thlogic>
